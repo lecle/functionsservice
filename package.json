@@ -1,0 +1,30 @@
+{
+  "name": "functionsservice",
+  "version": "0.0.1",
+  "description": "functions microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lecle/functionsservice.git"
+  },
+  "keywords": [
+    "microservice,noserv,functions"
+  ],
+  "author": "Daesun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lecle/functionsservice/issues"
+  },
+  "homepage": "https://github.com/lecle/functionsservice",
+  "dependencies": {
+    "assert": "~1.2.0",
+    "istanbul": "^0.3.5",
+    "lodash": "^3.1.0",
+    "mocha": "~2.0.1"
+  }
+}
